@@ -11,9 +11,11 @@ import UIKit
 let BASE_URL = "https://newsapi.org/v2/top-headlines?apiKey=ba88909bbda0454aaa503a8fff5e1225&country=ru"
 
 protocol BaseView {
-    func showLoad() -> Void
-    func hideLoad() -> Void
+
+    func showLoading() -> Void
+    func hideLoading() -> Void
     func error(error: String) -> Void
+
 }
 
 class BaseViewController: UIViewController{
