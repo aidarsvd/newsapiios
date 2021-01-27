@@ -8,20 +8,8 @@
 import UIKit
 import Kingfisher
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NewsView {
+class ViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, NewsView {
     @IBOutlet weak var newsTable: UITableView!
-    
-    func showLoading() {
-        
-    }
-    
-    func hideLoading() {
-        
-    }
-    
-    func error(error: String) {
-        
-    }
     
     var service: NewsService!
 
@@ -39,6 +27,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,6 +60,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return UITableViewCell()
 
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(listData[indexPath.row].url)")
+        let vc = getVC(name: "WebView") as! WebView
+        vc.urlNews = listData[indexPath.row].url!
+        self.navigationController?.pushViewController(vc, animated:true)
         
     }
     
