@@ -5,6 +5,7 @@ PODS:
   - AlamofireObjectMapper (6.2.0):
     - Alamofire (= 5.0.0-rc.2)
     - ObjectMapper (~> 3.5.1)
+  - Kingfisher (6.0.1)
   - ObjectMapper (3.5.3)
   - RappleProgressHUD (4.1)
 
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
   - AlamofireNetworkActivityLogger
   - AlamofireObjectMapper
+  - Kingfisher (~> 6.0)
   - RappleProgressHUD
 
 SPEC REPOS:
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireNetworkActivityLogger
     - AlamofireObjectMapper
+    - Kingfisher
     - ObjectMapper
     - RappleProgressHUD
 
@@ -26,9 +29,10 @@ SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
   AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
   AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
 
-PODFILE CHECKSUM: d1fae36bb79249ee7a6ca695771fe1e4c59b57d5
+PODFILE CHECKSUM: a70ac1f2c257a5191adaadf921e11ebb89028416
 
 COCOAPODS: 1.10.1

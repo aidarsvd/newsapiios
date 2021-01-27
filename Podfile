@@ -10,5 +10,6 @@ target 'news' do
   pod 'AlamofireObjectMapper'
   pod 'AlamofireNetworkActivityLogger'
   pod "RappleProgressHUD"
+  pod 'Kingfisher', '~> 6.0'
 
 end

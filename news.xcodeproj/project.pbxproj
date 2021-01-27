@@ -17,6 +17,8 @@
 		487F112225C1362600B085E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F112125C1362600B085E3 /* BaseViewController.swift */; };
 		487F112725C138BE00B085E3 /* NewsMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F112625C138BE00B085E3 /* NewsMainModel.swift */; };
 		487F112B25C13CB500B085E3 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F112A25C13CB500B085E3 /* NewsService.swift */; };
+		487F113125C1445900B085E3 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F112F25C1445900B085E3 /* NewsCell.swift */; };
+		487F113225C1445900B085E3 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F113025C1445900B085E3 /* NewsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		487F112125C1362600B085E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		487F112625C138BE00B085E3 /* NewsMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMainModel.swift; sourceTree = "<group>"; };
 		487F112A25C13CB500B085E3 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		487F112F25C1445900B085E3 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		487F113025C1445900B085E3 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		4CE4990E70F8FE890BF973B5 /* Pods-news.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.release.xcconfig"; path = "Target Support Files/Pods-news/Pods-news.release.xcconfig"; sourceTree = "<group>"; };
 		E3C5BE318CEF5E7A3FD3D24C /* Pods_news.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_news.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +73,7 @@
 		487F110225C1343100B085E3 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				487F112E25C1443F00B085E3 /* cell */,
 				487F112925C13CA700B085E3 /* sevice */,
 				487F112525C138AA00B085E3 /* model */,
 				487F112025C1361500B085E3 /* base */,
@@ -105,6 +110,15 @@
 				487F112A25C13CB500B085E3 /* NewsService.swift */,
 			);
 			path = sevice;
+			sourceTree = "<group>";
+		};
+		487F112E25C1443F00B085E3 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				487F112F25C1445900B085E3 /* NewsCell.swift */,
+				487F113025C1445900B085E3 /* NewsCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		6BC8099F561B21B57B178627 /* Frameworks */ = {
@@ -185,6 +199,7 @@
 			files = (
 				487F111025C1343100B085E3 /* LaunchScreen.storyboard in Resources */,
 				487F110D25C1343100B085E3 /* Assets.xcassets in Resources */,
+				487F113225C1445900B085E3 /* NewsCell.xib in Resources */,
 				487F110B25C1343100B085E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +256,7 @@
 				487F112B25C13CB500B085E3 /* NewsService.swift in Sources */,
 				487F110825C1343100B085E3 /* ViewController.swift in Sources */,
 				487F112225C1362600B085E3 /* BaseViewController.swift in Sources */,
+				487F113125C1445900B085E3 /* NewsCell.swift in Sources */,
 				487F112725C138BE00B085E3 /* NewsMainModel.swift in Sources */,
 				487F110425C1343100B085E3 /* AppDelegate.swift in Sources */,
 				487F110625C1343100B085E3 /* SceneDelegate.swift in Sources */,
@@ -394,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J792P79NM3;
 				INFOPLIST_FILE = news/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J792P79NM3;
 				INFOPLIST_FILE = news/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
