@@ -48,7 +48,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         if let cell = newsTable.dequeueReusableCell(withIdentifier: "NewsCell") as? NewsCell{
             cell.newsTitle.text = listData[indexPath.row].title
             
-            let url = URL(string: listData[indexPath.row].urlToImage!)
+            let url = URL(string: listData[indexPath.row].urlToImage ?? "")
             cell.newsImage.kf.setImage(with: url)
             
             cell.newsDetailText.text = listData[indexPath.row].description
